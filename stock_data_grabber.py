@@ -8,8 +8,9 @@ from alpaca.data.timeframe import TimeFrame
 from alpaca.data.timeframe import TimeFrameUnit
 from datetime import datetime
 
-public_key = 'PK3F163QBGZS637MBOUA'
-private_key = 'gh2qBAHzJq8TGxed4iGvfQBtnpIh9zXIonnkT5OB'
+# Add personal keys here
+public_key = ''
+private_key = ''
 
 stock_client = StockHistoricalDataClient(public_key, private_key)
 stock_request_params = StockBarsRequest(symbol_or_symbols='SPY', timeframe=TimeFrame.Day, start=datetime(2018, 7, 9), end=datetime(2018, 7, 19))
